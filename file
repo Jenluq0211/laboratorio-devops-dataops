@@ -1,0 +1,20 @@
+[1mdiff --git a/Jenkinsfile b/Jenkinsfile[m
+[1mindex 14d5b4c..804c6eb 100644[m
+[1m--- a/Jenkinsfile[m
+[1m+++ b/Jenkinsfile[m
+[36m@@ -10,7 +10,7 @@[m [mpipeline {[m
+             }[m
+         }[m
+ [m
+[31m-        stage('Procesamiento') {[m
+[32m+[m[32m        stage('Procesamiento Dataset') {[m
+             steps {[m
+                 bat 'python scripts/procesamiento.py'[m
+             }[m
+[36m@@ -29,4 +29,5 @@[m [mpipeline {[m
+         }[m
+ [m
+     }[m
+[32m+[m
+ }[m
+\ No newline at end of file[m
