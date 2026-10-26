@@ -5,15 +5,19 @@ pipeline {
     stages {
 
         stage('Verificar Python') {
+
             steps {
                 bat 'python --version'
             }
+
         }
 
-        stage('Procesamiento') {
+        stage('Procesamiento Dataset') {
+
             steps {
                 bat 'python scripts/procesamiento.py'
             }
+
         }
 
     }
@@ -29,4 +33,5 @@ pipeline {
         }
 
     }
+
 }
