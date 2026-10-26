@@ -6,13 +6,13 @@ pipeline {
 
         stage('Verificar Python') {
             steps {
-                bat 'py --version'
+                bat '"C:\\Certus_clases\\Lab_DataOps\\.venv\\Scripts\\python.exe" --version'
             }
         }
 
         stage('Procesamiento Dataset') {
             steps {
-                bat 'py scripts/procesamiento.py'
+                bat '"C:\\Certus_clases\\Lab_DataOps\\.venv\\Scripts\\python.exe" scripts\\procesamiento.py'
             }
         }
 
